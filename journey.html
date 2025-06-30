@@ -13,24 +13,42 @@
             padding: 0;
         }
         .navigation {
-            background: #e74c3c;
-            padding: 10px 0;
+            background: #fff;
+            padding: 14px 0 12px 0;
             text-align: center;
+            box-shadow: 0 2px 12px rgba(231,76,60,0.08);
+            border-radius: 0 0 18px 18px;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 18px;
+        }
+        .nav-logo {
+            font-size: 2rem;
+            margin-right: 18px;
+            user-select: none;
         }
         .nav-button {
-            background: #fff;
-            color: #e74c3c;
-            border: 1px solid #e74c3c;
-            padding: 8px 18px;
-            border-radius: 20px;
-            text-decoration: none;
-            margin: 0 8px;
-            font-size: 1rem;
-            transition: background 0.2s, color 0.2s;
-        }
-        .nav-button:hover {
             background: #e74c3c;
             color: #fff;
+            border: none;
+            padding: 10px 28px;
+            border-radius: 22px;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-family: inherit;
+            margin: 0 4px;
+            transition: background 0.2s, color 0.2s, transform 0.2s;
+            box-shadow: 0 2px 8px rgba(231,76,60,0.08);
+            cursor: pointer;
+            font-weight: 500;
+        }
+        .nav-button:hover, .nav-button.active {
+            background: #fff;
+            color: #e74c3c;
+            border: 1.5px solid #e74c3c;
+            transform: translateY(-2px) scale(1.04);
         }
         .container {
             max-width: 700px;
@@ -115,6 +133,7 @@
 </head>
 <body>
     <div class="navigation">
+        <span class="nav-logo">🥙</span>
         <a href="index.html" class="nav-button">Home</a>
         <a href="journey.html" class="nav-button">Journey</a>
     </div>

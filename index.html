@@ -14,24 +14,56 @@
             padding: 0;
         }
         .navigation {
-            background: #e74c3c;
-            padding: 10px 0;
-            text-align: center;
+            background: rgba(255,255,255,0.85);
+            padding: 18px 0 16px 0;
+            box-shadow: 0 8px 32px 0 rgba(31,38,135,0.12);
+            border-radius: 0 0 24px 24px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(6px);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+            border-bottom: 1.5px solid #ffe5b4;
+            transition: background 0.3s;
+        }
+        .nav-inner {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 36px;
+        }
+        .nav-logo {
+            font-size: 2.6rem;
+            margin-right: 36px;
+            user-select: none;
+            filter: drop-shadow(0 2px 8px rgba(231,76,60,0.12));
+            transition: transform 0.2s;
+        }
+        .nav-logo:hover {
+            transform: scale(1.15) rotate(-8deg);
         }
         .nav-button {
-            background: #fff;
-            color: #e74c3c;
-            border: 1px solid #e74c3c;
-            padding: 8px 18px;
-            border-radius: 20px;
-            text-decoration: none;
-            margin: 0 8px;
-            font-size: 1rem;
-            transition: background 0.2s, color 0.2s;
-        }
-        .nav-button:hover {
             background: #e74c3c;
             color: #fff;
+            border: none;
+            padding: 16px 44px;
+            border-radius: 28px;
+            text-decoration: none;
+            font-size: 1.25rem;
+            font-family: inherit;
+            margin: 0 8px;
+            transition: background 0.2s, color 0.2s, transform 0.2s, box-shadow 0.2s;
+            box-shadow: 0 2px 12px rgba(231,76,60,0.10);
+            cursor: pointer;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+        }
+        .nav-button:hover, .nav-button.active {
+            background: #fff;
+            color: #e74c3c;
+            border: 1.5px solid #e74c3c;
+            transform: translateY(-2px) scale(1.07);
+            box-shadow: 0 4px 18px rgba(231,76,60,0.13);
         }
         .container {
             max-width: 600px;
@@ -105,8 +137,11 @@
 </head>
 <body>
     <div class="navigation">
-        <a href="index.html" class="nav-button">Home</a>
-        <a href="journey.html" class="nav-button">Journey</a>
+        <div class="nav-inner">
+            <span class="nav-logo">🥙</span>
+            <a href="index.html" class="nav-button">Home</a>
+            <a href="journey.html" class="nav-button">Journey</a>
+        </div>
     </div>
     <div class="container">
         <h1 class="main-title">The Kebab Appreciation Guide</h1>
@@ -138,7 +173,7 @@
         let kebabCount = 0;
         function addKebabLove() {
             kebabCount++;
-            document.getElementById('kebabCounter').textContent = kebabCount;
+            document.getElementById('kebabCounter').innerText = kebabCount;
         }
     </script>
 </body>
