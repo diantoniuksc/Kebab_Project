@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background: #f8f8f8;
+            background: linear-gradient(120deg, #ffe5b4 0%, #ffb347 100%);
             color: #222;
             margin: 0;
             padding: 0;
@@ -48,6 +48,15 @@
             margin-bottom: 30px;
             color: #555;
         }
+        .kebab-hero {
+            text-align: center;
+            margin: 30px 0 20px 0;
+        }
+        .kebab-hero img {
+            width: 220px;
+            border-radius: 16px;
+            box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+        }
         .timeline {
             border-left: 3px solid #e74c3c;
             margin: 30px 0;
@@ -55,6 +64,21 @@
         }
         .timeline-item {
             margin-bottom: 30px;
+            background: #fff7e6;
+            border-radius: 10px;
+            padding: 16px 18px 16px 54px;
+            position: relative;
+            transition: box-shadow 0.2s, transform 0.2s;
+        }
+        .timeline-item:hover {
+            box-shadow: 0 4px 16px rgba(231,76,60,0.10);
+            transform: translateY(-4px) scale(1.02);
+        }
+        .timeline-icon {
+            position: absolute;
+            left: 16px;
+            top: 18px;
+            font-size: 1.7rem;
         }
         .timeline-date {
             font-weight: bold;
@@ -97,28 +121,36 @@
     <div class="container">
         <h1 class="page-title">Kebab Cultural Journey</h1>
         <div class="page-desc">A simple look at kebab traditions around the world.</div>
+        <div class="kebab-hero">
+            <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=400&q=80" alt="Kebab Platter">
+        </div>
         <div class="timeline">
             <div class="timeline-item">
+                <span class="timeline-icon">🇹🇷</span>
                 <div class="timeline-date">Turkey</div>
                 <div class="timeline-title">Döner Kebab</div>
                 <div class="timeline-desc">Rotating meat cooked on a vertical spit, served with pita and vegetables. A classic from the Ottoman Empire.</div>
             </div>
             <div class="timeline-item">
+                <span class="timeline-icon">🇬🇷</span>
                 <div class="timeline-date">Greece</div>
                 <div class="timeline-title">Souvlaki</div>
                 <div class="timeline-desc">Small pieces of meat grilled on skewers, often with pita and tzatziki. A favorite since ancient times.</div>
             </div>
             <div class="timeline-item">
+                <span class="timeline-icon">🇮🇳</span>
                 <div class="timeline-date">India</div>
                 <div class="timeline-title">Seekh Kebab</div>
                 <div class="timeline-desc">Minced meat with spices, grilled on skewers in a tandoor oven. A Mughal cuisine specialty.</div>
             </div>
             <div class="timeline-item">
+                <span class="timeline-icon">🇱🇧</span>
                 <div class="timeline-date">Lebanon</div>
                 <div class="timeline-title">Shish Kebab</div>
                 <div class="timeline-desc">Marinated lamb or beef grilled on skewers, served with tabbouleh and hummus.</div>
             </div>
             <div class="timeline-item">
+                <span class="timeline-icon">🌍</span>
                 <div class="timeline-date">Modern Fusion</div>
                 <div class="timeline-title">Global Innovation</div>
                 <div class="timeline-desc">Chefs worldwide blend kebab traditions with local flavors for new creations.</div>
