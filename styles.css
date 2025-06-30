@@ -1,0 +1,302 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Georgia', 'Times New Roman', serif;
+    background: #f4e8d0;
+    min-height: 100vh;
+    overflow-x: hidden;
+    line-height: 1.6;
+}
+
+
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.navigation {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+}
+
+.nav-button {
+    background: #8b4513;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: bold;
+    transition: background 0.2s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 10px;
+    font-family: 'Georgia', serif;
+}
+
+.nav-button:hover {
+    background: #a0522d;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.main-title {
+    font-size: 3rem;
+    color: #2c1810;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.main-title:hover {
+    color: #8b4513;
+}
+
+.subtitle {
+    font-size: 1.2rem;
+    color: #5d4037;
+    font-style: italic;
+}
+
+.kebab-counter {
+    background: #fff;
+    border: 2px solid #d2b48c;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 30px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.counter-display {
+    font-size: 2.8rem;
+    color: #8b4513;
+    font-weight: bold;
+    margin: 15px 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+}
+
+.love-button {
+    background: #d4a574;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+    margin: 5px;
+    font-weight: bold;
+    font-family: 'Georgia', serif;
+}
+
+.love-button:hover {
+    background: #c49563;
+}
+
+.love-button:active {
+    transform: translateY(1px);
+}
+
+.kebab-facts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+    margin: 45px 0;
+}
+
+.fact-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.fact-card:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.fact-title {
+    font-size: 1.4rem;
+    color: #5d4037;
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+}
+
+.fact-emoji {
+    font-size: 1.8rem;
+    margin-right: 8px;
+}
+
+.fact-card p {
+    color: #6d4c41;
+    line-height: 1.5;
+    font-size: 0.95rem;
+}
+
+.floating-kebab {
+    position: fixed;
+    font-size: 2.5rem;
+    pointer-events: none;
+    z-index: 1000;
+    animation: float 8s ease-in-out infinite;
+}
+
+
+
+.testimonial {
+    background: #f9f6f1;
+    border: 1px solid #d2b48c;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 25px 0;
+    text-align: center;
+    font-style: italic;
+    font-size: 1.1rem;
+    color: #5d4037;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.heart-rain {
+    position: fixed;
+    top: -50px;
+    font-size: 1.8rem;
+    pointer-events: none;
+    animation: fall 5s linear infinite;
+    z-index: 999;
+}
+
+
+
+.interactive-section {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 25px;
+    margin: 25px 0;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.interactive-section h2 {
+    color: #5d4037;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.kebab-canvas {
+    border: 2px solid #8b4513;
+    border-radius: 6px;
+    cursor: crosshair;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+}
+
+.gallery-container {
+    text-align: center;
+    margin: 20px 0;
+    padding: 10px;
+}
+
+.gallery-caption {
+    font-style: italic;
+    color: #6d4c41;
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.kebab-gallery-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: box-shadow 0.2s ease;
+    border: 2px solid #d2b48c;
+}
+
+.kebab-gallery-image:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.counter-display {
+    font-size: 2.5rem;
+    color: #8b4513;
+    font-weight: bold;
+    margin: 15px 0;
+}
+
+/* Simple mobile responsive */
+@media (max-width: 768px) {
+    .main-title {
+        font-size: 2.2rem;
+    }
+    
+    .kebab-facts {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .container {
+        padding: 15px;
+    }
+    
+    .navigation {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .kebab-canvas {
+        width: 100%;
+        max-width: 400px;
+        height: 200px;
+    }
+}
+
+/* Testimonial smooth transition */
+#randomTestimonial {
+    transition: all 0.3s ease;
+}
+
+/* Simplified love meter */
+.love-meter {
+    width: 100%;
+    height: 20px;
+    background: #e8dcc0;
+    border: 1px solid #d2b48c;
+    border-radius: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+}
+
+.love-level {
+    height: 100%;
+    background: #d4a574;
+    width: 0%;
+    transition: width 1s ease;
+    border-radius: 9px;
+}
