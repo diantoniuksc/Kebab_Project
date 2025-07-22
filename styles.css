@@ -33,7 +33,6 @@ body {
     border: none;
     padding: 10px 16px;
     border-radius: 6px;
-    cursor: pointer;
     font-size: 0.9rem;
     font-weight: bold;
     transition: background 0.2s ease;
@@ -55,9 +54,7 @@ body {
 .main-title {
     font-size: 3rem;
     color: #2c1810;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     margin-bottom: 15px;
-    cursor: pointer;
     transition: color 0.3s ease;
     font-weight: bold;
     letter-spacing: 1px;
@@ -98,7 +95,6 @@ body {
     padding: 12px 20px;
     font-size: 1rem;
     border-radius: 6px;
-    cursor: pointer;
     transition: background 0.2s ease;
     margin: 5px;
     font-weight: bold;
@@ -127,7 +123,6 @@ body {
     padding: 20px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     transition: box-shadow 0.2s ease;
-    cursor: pointer;
 }
 
 .fact-card:hover {
@@ -231,7 +226,6 @@ body {
     height: auto;
     border-radius: 6px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    cursor: pointer;
     transition: box-shadow 0.2s ease;
     border: 2px solid #d2b48c;
 }
